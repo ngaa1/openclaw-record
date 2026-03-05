@@ -1,7 +1,7 @@
 {
   "agent:main:main": {
     "sessionId": "2378df52-f6b7-4590-8797-18d907702bc7",
-    "updatedAt": 1772698025946,
+    "updatedAt": 1772698168495,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -70,7 +70,7 @@
     "model": "doubao-seed-2.0-code",
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1772693895871,
+      "generatedAt": 1772698027217,
       "sessionId": "2378df52-f6b7-4590-8797-18d907702bc7",
       "sessionKey": "agent:main:main",
       "provider": "ark",
@@ -307,13 +307,13 @@
         ]
       }
     },
-    "cacheRead": 15416,
+    "cacheRead": 6200,
     "cacheWrite": 0,
     "totalTokensFresh": true,
     "contextTokens": 200000,
-    "inputTokens": 52605,
-    "outputTokens": 2371,
-    "totalTokens": 16575,
+    "inputTokens": 108647,
+    "outputTokens": 2288,
+    "totalTokens": 27084,
     "deliveryContext": {
       "channel": "webchat"
     },
