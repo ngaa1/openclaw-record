@@ -1,2 +1,6 @@
-workspace/
-agents/main/sessions/
+# 忽略所有文件
+*
+
+# 只保留需要的文件
+!.gitignore
+!openclaw.json
