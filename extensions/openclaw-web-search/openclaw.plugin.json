@@ -1,0 +1,26 @@
+{
+  "id": "openclaw-web-search",
+  "name": "Web Search (Zhipu)",
+  "description": "Web search via Zhipu AI API, accessible from within China",
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "enabled": { "type": "boolean" },
+      "apiKey": { "type": "string" },
+      "baseUrl": { "type": "string" },
+      "searchEngine": {
+        "type": "string",
+        "enum": ["search_std", "search_pro", "search_pro_sogou", "search_pro_quark"]
+      },
+      "maxResults": { "type": "number" },
+      "contentSize": { "type": "string", "enum": ["medium", "high"] }
+    }
+  },
+  "uiHints": {
+    "apiKey": { "label": "Zhipu API Key", "sensitive": true },
+    "baseUrl": { "label": "API Base URL", "help": "Default: https://open.bigmodel.cn" },
+    "searchEngine": { "label": "Search Engine", "help": "search_std (0.01), search_pro (0.03), search_pro_sogou (0.05), search_pro_quark (0.05) RMB/query" },
+    "maxResults": { "label": "Max Results", "help": "1-10, default 10" },
+    "contentSize": { "label": "Content Size", "help": "medium or high" }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "name": "openclaw-web-search",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "OpenClaw web search plugin via Zhipu AI API, accessible from within China",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "openclaw.plugin.json"
+  ],
+  "openclaw": {
+    "extensions": [
+      "./dist/index.js"
+    ],
+    "install": {
+      "npmSpec": "openclaw-web-search",
+      "localPath": ".",
+      "defaultChoice": "npm"
+    }
+  },
+  "moltbot": {
+    "extensions": [
+      "./dist/index.js"
+    ],
+    "install": {
+      "npmSpec": "openclaw-web-search",
+      "localPath": ".",
+      "defaultChoice": "npm"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@sinclair/typebox": "^0.34.0",
+    "@types/node": "^22.0.0",
+    "tsup": "^8.2.0",
+    "typescript": "^5.7.0"
+  },
+  "peerDependencies": {
+    "moltbot": ">=0.1.0"
+  },
+  "peerDependenciesMeta": {
+    "moltbot": {
+      "optional": true
+    }
+  },
+  "private": false
+}
