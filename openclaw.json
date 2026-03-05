@@ -110,7 +110,11 @@
       "agentId": 1000002,
       "token": "qs9YPTegDRmMogMPs",
       "encodingAESKey": "nFORbZJyaaKdUz8JVN9nLPMHNnNr4GNn2KE1JxmoDy0",
-      "webhookPath": "/wecom-app"
+      "voiceTranscode": {
+        "enabled": true
+      },
+      "webhookPath": "/wecom-app",
+      "apiBaseUrl": "myworkstation.tail4e1450.ts.net"
     }
   },
   "gateway": {
@@ -118,12 +122,12 @@
     "mode": "local",
     "bind": "loopback",
     "auth": {
-      "mode": "token",
-      "token": "dcb1f4fee384d26c252adc975af62608e92212607bc1cd9c",
+      "mode": "password",
+      "password": "_+ZdKMolJ4vj2,T@9?*!",
       "allowTailscale": true
     },
     "tailscale": {
-      "mode": "off",
+      "mode": "funnel",
       "resetOnExit": false
     },
     "nodes": {
