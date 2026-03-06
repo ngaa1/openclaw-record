@@ -113,8 +113,7 @@
       "voiceTranscode": {
         "enabled": true
       },
-      "webhookPath": "/wecom-app",
-      "apiBaseUrl": "myworkstation.tail4e1450.ts.net"
+      "webhookPath": "/wecom-app"
     }
   },
   "gateway": {
