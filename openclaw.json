@@ -121,12 +121,12 @@
     "mode": "local",
     "bind": "loopback",
     "auth": {
-      "mode": "password",
-      "password": "_+ZdKMolJ4vj2,T@9?*!",
+      "mode": "token",
+      "token": "dff0ff75e076286a61529a6201ed172822324bdd5cb4f1ae",
       "allowTailscale": true
     },
     "tailscale": {
-      "mode": "funnel",
+      "mode": "off",
       "resetOnExit": false
     },
     "nodes": {
