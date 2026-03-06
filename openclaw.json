@@ -18,12 +18,13 @@
         "api": "openai-completions",
         "models": [
           {
-            "id": "doubao-seed-2.0-code",
-            "name": "doubao-seed-2.0-code",
+            "id": "ark-code-latest",
+            "name": "ark-code-latest",
             "api": "openai-completions",
             "reasoning": false,
             "input": [
-              "text"
+              "text",
+              "image"
             ],
             "cost": {
               "input": 0,
@@ -47,10 +48,10 @@
   "agents": {
     "defaults": {
       "model": {
-        "primary": "ark/doubao-seed-2.0-code"
+        "primary": "ark/ark-code-latest"
       },
       "models": {
-        "ark/doubao-seed-2.0-code": {}
+        "ark/ark-code-latest": {}
       },
       "workspace": "D:\\openclaw\\.openclaw\\workspace",
       "compaction": {
@@ -101,10 +102,11 @@
       "webhookPath": "/wecom",
       "token": "WFFo2QLaOtN4zIzu5",
       "encodingAESKey": "eDCjU5WkpvyITdswcIUzg9mhgNutNwZHNtijenHJXw8",
-      "enabled": true,
+      "enabled": false,
       "requireMention": false
     },
     "wecom-app": {
+      "enabled": true,
       "corpId": "wwe76dbb18c59c8946",
       "corpSecret": "9ux3Za9eZLnl3jiSsNVumuB1PMNk2HtjX6Ct9KkykCw",
       "agentId": 1000002,
@@ -121,12 +123,12 @@
     "mode": "local",
     "bind": "loopback",
     "auth": {
-      "mode": "token",
-      "token": "dff0ff75e076286a61529a6201ed172822324bdd5cb4f1ae",
+      "mode": "password",
+      "password": "_+ZdKMolJ4vj2,T@9?*!",
       "allowTailscale": true
     },
     "tailscale": {
-      "mode": "off",
+      "mode": "funnel",
       "resetOnExit": false
     },
     "nodes": {
